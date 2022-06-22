@@ -1,0 +1,137 @@
+{
+  "BAYC": [
+    { "type": "socks", "number": 562949953421312, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 7374883553280, "url_prefix": "0000" },
+    { "type": "snapback", "number": 24930131968, "url_prefix": "00000" },
+    { "type": "hightops", "number": 0, "url_prefix": "000000000000000" },
+    { "type": "daypack", "number": 281474976710656, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 49860263936, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 899906842624, "url_prefix": "0000" }
+  ],
+  "Cryptoadz": [
+    { "type": "socks", "number": 563001493028864, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 426423160832, "url_prefix": "00001407" },
+    { "type": "snapback", "number": 844476469739520, "url_prefix": "00000" },
+    { "type": "hightops", "number": 51539607552, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281526516318208, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 901399871488, "url_prefix": "00001688" },
+    { "type": "five_panel", "number": 25951446450176, "url_prefix": "000011" }
+  ],
+  "Wizards": [
+    { "type": "socks", "number": 563010082963456, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 435013095424, "url_prefix": "00001407" },
+    { "type": "snapback", "number": 844485059674112, "url_prefix": "00000" },
+    { "type": "hightops", "number": 60129542144, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281535106252800, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 909989806080, "url_prefix": "00001688" },
+    { "type": "five_panel", "number": 25960036384768, "url_prefix": "000011" }
+  ],
+  "WOW": [
+    { "type": "socks", "number": 562967133290496, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 392063422464, "url_prefix": "00001407" },
+    { "type": "snapback", "number": 844442110001152, "url_prefix": "00000" },
+    { "type": "hightops", "number": 17179869184, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281492156579840, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 867040133120, "url_prefix": "00001688" },
+    { "type": "five_panel", "number": 25917086711808, "url_prefix": "000011" }
+  ],
+  "CoolCats": [
+    { "type": "socks", "number": 562958543355904, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 1407383473487872, "url_prefix": "0000" },
+    { "type": "snapback", "number": 844433520066560, "url_prefix": "00000" },
+    { "type": "hightops", "number": 8589934592, "url_prefix": "0000000000" },
+    { "type": "daypack", "number": 281483566645248, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 1688858450198528, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 1125908496777216, "url_prefix": "0000" }
+  ],
+  "PudgyPenguins": [
+    { "type": "socks", "number": 562962838323200, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 387768455168, "url_prefix": "00001407" },
+    { "type": "snapback", "number": 844437815033856, "url_prefix": "00000" },
+    { "type": "hightops", "number": 12884901888, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281487861612544, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 862745165824, "url_prefix": "00001688" },
+    { "type": "five_panel", "number": 25912791744512, "url_prefix": "000011" }
+  ],
+  "On1": [
+    { "type": "socks", "number": 562992903094272, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 1407417833226240, "url_prefix": "0000" },
+    { "type": "snapback", "number": 844467879804928, "url_prefix": "00000" },
+    { "type": "hightops", "number": 42949672960, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281517926383616, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 1688892809936896, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 1125942856515584, "url_prefix": "0000" }
+  ],
+  "GutterCats": [
+    { "type": "socks", "number": 562971428257792, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 396358389760, "url_prefix": "00001407" },
+    { "type": "snapback", "number": 844446404968448, "url_prefix": "00000" },
+    { "type": "hightops", "number": 21474836480, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281496451547136, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 871335100416, "url_prefix": "00001688" },
+    { "type": "five_panel", "number": 25921381679104, "url_prefix": "000011" }
+  ],
+  "WolfGame": [
+    { "type": "socks", "number": 563005787996160, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 430718128128, "url_prefix": "00001407" },
+    { "type": "snapback", "number": 844480764706816, "url_prefix": "00000" },
+    { "type": "hightops", "number": 55834574848, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281530811285504, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 905694838784, "url_prefix": "00001688" },
+    { "type": "five_panel", "number": 25955741417472, "url_prefix": "000011" }
+  ],
+  "MAYC": [
+    { "type": "socks", "number": 562954248388608, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 1407379178520576, "url_prefix": "0000" },
+    { "type": "snapback", "number": 844429225099264, "url_prefix": "00000" },
+    { "type": "hightops", "number": 4294967296, "url_prefix": "0000000000" },
+    { "type": "daypack", "number": 281479271677952, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 1688854155231232, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 1125904201809920, "url_prefix": "0000" }
+  ],
+  "BAKC": [
+    { "type": "socks", "number": 562975723225088, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 400653357056, "url_prefix": "00001407" },
+    { "type": "snapback", "number": 844450699935744, "url_prefix": "00000" },
+    { "type": "hightops", "number": 25769803776, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281500746514432, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 875630067712, "url_prefix": "00001688" },
+    { "type": "five_panel", "number": 25925676646400, "url_prefix": "000011" }
+  ],
+  "Moonbirds": [
+    { "type": "socks", "number": 563031557799936, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 1407456487931904, "url_prefix": "0000" },
+    { "type": "snapback", "number": 844506534510592, "url_prefix": "00000" },
+    { "type": "hightops", "number": 81604378624, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281556581089280, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 1688931464642560, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 1125981511221248, "url_prefix": "0000" }
+  ],
+  "Meebits": [
+    { "type": "socks", "number": 563040147734528, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 1407465077866496, "url_prefix": "0000" },
+    { "type": "snapback", "number": 844515124445184, "url_prefix": "00000" },
+    { "type": "hightops", "number": 90194313216, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281565171023872, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 1688940054577152, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 1125990101155840, "url_prefix": "0000" }
+  ],
+  "WoWG": [
+    { "type": "socks", "number": 563027262832640, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 1407452192964608, "url_prefix": "0000" },
+    { "type": "snapback", "number": 844502239543296, "url_prefix": "00000" },
+    { "type": "hightops", "number": 77309411328, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281552286121984, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 1688927169675264, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 1125977216253952, "url_prefix": "0000" }
+  ],
+  "Punkz": [
+    { "type": "socks", "number": 563022967865344, "url_prefix": "00000" },
+    { "type": "hoodie_comfy", "number": 1407447897997312, "url_prefix": "0000" },
+    { "type": "snapback", "number": 844497944576000, "url_prefix": "00000" },
+    { "type": "hightops", "number": 73014444032, "url_prefix": "000000000" },
+    { "type": "daypack", "number": 281547991154688, "url_prefix": "00000" },
+    { "type": "hoodie_cat_ears", "number": 1688922874707968, "url_prefix": "0000" },
+    { "type": "five_panel", "number": 1125972921286656, "url_prefix": "0000" }
+  ]
+}
