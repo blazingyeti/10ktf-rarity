@@ -11,7 +11,9 @@ function ImageList(props) {
           <Row key={i}>
             <Card className="ImageList" key={item.urlNumber}>
               <ImageItem
+                parentName={item.parentName}
                 nftType={item.nftType}
+                itemRarity={item.itemRarity}
                 nftNumber={item.nftNumber}
                 imageUrl={item.imageUrl}
               />
