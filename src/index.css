@@ -21,18 +21,44 @@ h1 {
   padding: 1rem;
 }
 
-.btn, .form-control {
+.btn,
+.form-control {
   width: 15rem;
+}
+
+.col {
+  padding: 1rem;
+}
+
+.row {
+  margin: 0.01rem;
 }
 
 .card {
   background-size: cover;
   background-position: center;
   background-color: lightgray;
-  margin-top: 5vh;
-
+  margin: 0.2rem;
+  padding: 0px;
 }
 
 #myItems {
   justify-content: center;
+  margin: 1rem;
+}
+
+.item-common {
+  background-color: whitesmoke;
+}
+
+.item-uncommon {
+  background-color: greenyellow;
+}
+
+.item-rare {
+  background-color: cornflowerblue;
+}
+
+.item-epic {
+  background-color: mediumpurple;
 }

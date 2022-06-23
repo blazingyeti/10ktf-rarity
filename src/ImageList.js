@@ -6,7 +6,7 @@ function ImageList(props) {
 
   return (
     <Container>
-      <Row id="myItems" xs={1} md={2} lg={3} xl={4} xxl={5}>
+      <Row id="myItems" xs={2} md={3} lg={4} xl={5} xxl={6}>
         {itemsFound.map((item, i) => (
           <Row key={i}>
             <Card className="ImageList" key={item.urlNumber}>
