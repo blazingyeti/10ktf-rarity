@@ -1,8 +1,8 @@
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row } from "react-bootstrap";
 import ImageItem from "./ImageItem";
 
 function ImageList(props) {
-  const { itemsFound } = props;
+  const { parentName, itemsFound, setModalShow, setModalData } = props;
 
   return (
     <Container>
@@ -11,15 +11,20 @@ function ImageList(props) {
           <Row key={i}>
             <Card className="ImageList" key={item.urlNumber}>
               <ImageItem
-                parentName={item.parentName}
+                parentName={parentName}
                 nftType={item.nftType}
                 itemRarity={item.itemRarity}
                 nftNumber={item.nftNumber}
                 imageUrl={item.imageUrl}
+                setModalShow={setModalShow}
+                setModalData={setModalData}
               />
             </Card>
           </Row>
         ))}
+      </Row>
+      <Row>
+
       </Row>
     </Container>
   );

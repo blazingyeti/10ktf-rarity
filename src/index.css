@@ -62,3 +62,15 @@ h1 {
 .item-epic {
   background-color: mediumpurple;
 }
+
+.img-wrapper{
+  overflow:hidden;
+}
+img.hover-zoom {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+img.hover-zoom:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}

@@ -78,7 +78,7 @@ const Controls = (props) => {
         <Col>
           <DropdownButton
             id="parents-dropdown"
-            title={parentName}
+            title={parentName === "" ? "Choose Parent" : parentName}
             onSelect={handleSelect}
           >
             {parents.map((item, i) => {
