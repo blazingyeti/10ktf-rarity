@@ -1,0 +1,31 @@
+{
+  "item_slots": {
+    "head": ["snapback", "five_panel", "combat_helmet", "pilot_helmet"],
+    "chest": ["hoodie_comfy", "hoodie_cat_ears", "kevlar_vest"],
+    "back": ["daypack"],
+    "feet": ["hightops", "socks", "combat_boots"],
+    "hands": ["foamo_sword", "machine_gun", "sock_doorknobs", "flamethrower"]
+  },
+  "item_multiplier": {
+    "common": 1,
+    "uncommon": 2,
+    "rare": 4,
+    "epic": 8
+  },
+  "item_values": {
+    "hoodie_cat_ears": 21,
+    "socks": 15,
+    "hoodie_comfy": 21,
+    "five_panel": 18,
+    "snapback": 18,
+    "daypack": 27,
+    "hightops": 44,
+    "sock_doorknobs": 35,
+    "combat_helmet": 27,
+    "pilot_helmet": 33,
+    "kevlar_vest": 31,
+    "combat_boots": 65,
+    "foamo_sword": 52,
+    "flamethrower": 76
+  }
+}

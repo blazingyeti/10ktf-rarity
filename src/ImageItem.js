@@ -9,6 +9,7 @@ function ImageItem(props) {
     imageUrl,
     setModalShow,
     setModalData,
+    itemScore,
   } = props;
 
   if (itemRarity != "") {
@@ -33,10 +34,19 @@ function ImageItem(props) {
     <Container className={classColor}>
       <Card key={nftNumber} onClick={handleClick}>
         <div className="img-wrapper">
-        <Card.Img src={imageUrl} className="imgList hover-zoom" alt={nftNumber} />
+          <Card.Img
+            src={imageUrl}
+            className="imgList hover-zoom"
+            alt={nftNumber}
+          />
         </div>
         <Card.Title>{itemRarity}</Card.Title>
       </Card>
+      {itemScore ? (
+        <div className="fs-6">BattleTown Value: {itemScore}</div>
+      ) : (
+        <div></div>
+      )}
     </Container>
   );
 }

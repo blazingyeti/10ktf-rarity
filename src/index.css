@@ -71,6 +71,6 @@ img.hover-zoom {
   width: 100%;
 }
 img.hover-zoom:hover {
-  cursor: pointer;
+  cursor: zoom-in;
   transform: scale(1.25);
 }

@@ -1,5 +1,6 @@
 import { Card, Container, Row } from "react-bootstrap";
 import ImageItem from "./ImageItem";
+import { getItemValue } from "./utils/scoreCalc";
 
 function ImageList(props) {
   const { parentName, itemsFound, setModalShow, setModalData } = props;
@@ -18,13 +19,11 @@ function ImageList(props) {
                 imageUrl={item.imageUrl}
                 setModalShow={setModalShow}
                 setModalData={setModalData}
+                itemScore={getItemValue(item.nftType, item.itemRarity)}
               />
             </Card>
           </Row>
         ))}
-      </Row>
-      <Row>
-
       </Row>
     </Container>
   );
