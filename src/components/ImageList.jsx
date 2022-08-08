@@ -1,11 +1,9 @@
 import { Card, Container, Row } from "react-bootstrap";
 import ImageItem from "./ImageItem";
-import { getItemValue, bestScore } from "../utils/scoreCalc";
+import { getItemValue } from "../utils/scoreCalc";
 
 function ImageList(props) {
   const { parentName, itemsFound, setModalShow, setModalData } = props;
-
-  const bestResults = bestScore(itemsFound);
 
   return (
     <Container>
