@@ -1,12 +1,12 @@
 {
   "BAYC": [
     { "type": "socks", "number": 562949953421312, "url_prefix": "00000" },
-    { "type": "hoodie_comfy", "number": 7374883553280, "url_prefix": "0000" },
-    { "type": "snapback", "number": 24930131968, "url_prefix": "00000" },
-    { "type": "hightops", "number": 0, "url_prefix": "000000000000000" },
+    { "type": "hoodie_comfy", "number": 7374883553280, "url_prefix": "0000140" },
+    { "type": "snapback", "number": 24930131968, "url_prefix": "000008444" },
+    { "type": "hightops", "number": 0, "url_prefix": "0000000000000" },
     { "type": "daypack", "number": 281474976710656, "url_prefix": "00000" },
-    { "type": "hoodie_cat_ears", "number": 49860263936, "url_prefix": "0000" },
-    { "type": "five_panel", "number": 899906842624, "url_prefix": "0000" }
+    { "type": "hoodie_cat_ears", "number": 49860263936, "url_prefix": "00016888" },
+    { "type": "five_panel", "number": 899906842624, "url_prefix": "001125" }
   ],
   "Cryptoadz": [
     { "type": "socks", "number": 563001493028864, "url_prefix": "00000" },
@@ -133,5 +133,14 @@
     { "type": "daypack", "number": 281547991154688, "url_prefix": "00000" },
     { "type": "hoodie_cat_ears", "number": 1688922874707968, "url_prefix": "0000" },
     { "type": "five_panel", "number": 1125972921286656, "url_prefix": "0000" }
+  ],
+  "Nouns": [
+    { "type": "socks", "number": 563044442701824, "url_prefix": "0000" },
+    { "type": "hoodie_comfy", "number": 469372833792, "url_prefix": "01407" },
+    { "type": "snapback", "number": 844519419412480, "url_prefix": "0000" },
+    { "type": "hightops", "number": 94489280512, "url_prefix": "00000" },
+    { "type": "daypack", "number": 281569465991168, "url_prefix": "000" },
+    { "type": "hoodie_cat_ears", "number": 944349544448, "url_prefix": "01688" },
+    { "type": "five_panel", "number": 25994396123136, "url_prefix": "011" }
   ]
 }

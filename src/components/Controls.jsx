@@ -32,10 +32,17 @@ const Controls = (props) => {
     const currentUrls = ImageUrls[parentName];
     const rarity_data = Data[parentName];
 
+    const fixParents = ["BAYC", "Nouns"]
+
     currentUrls.forEach((element) => {
       var currentNumber = parseInt(submittedNumber) + element["number"];
-      var currentItem =
-        baseUrl + element["url_prefix"] + currentNumber.toString() + ".jpg";
+      var imgNumberStr = element["url_prefix"] + currentNumber.toString();
+
+      if (fixParents.includes(parentName) && imgNumberStr.length < 20) {
+        imgNumberStr = imgNumberStr.padStart(20, "0");
+      }
+
+      var currentItem = baseUrl + imgNumberStr + ".jpg";
 
       // Get rarity data if available
       if (rarity_data) {
