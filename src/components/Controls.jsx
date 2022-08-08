@@ -9,8 +9,8 @@ import {
   Col,
 } from "react-bootstrap";
 
-import ImageUrls from "./data/image_urls.json";
-import Data from "./data/processed_data.json";
+import ImageUrls from "../data/image_urls.json";
+import Data from "../data/processed_data.json";
 
 const Controls = (props) => {
   const { setNftNumber, parentName, setParentName, setItemsFound } = props;

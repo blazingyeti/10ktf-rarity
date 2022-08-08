@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 
-import Controls from "./Controls";
-import ImageList from "./ImageList";
-import ImageModal from "./ImageModal";
+import Controls from "./components/Controls";
+import ImageList from "./components/ImageList";
+import ImageModal from "./components/ImageModal";
 
 const App = () => {
   const [parentName, setParentName] = useState("");
