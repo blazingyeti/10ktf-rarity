@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 
 import Controls from "./components/Controls";
 import ImageList from "./components/ImageList";
 import ImageModal from "./components/ImageModal";
+import BTLoadout from "./components/BTLoadout";
 
 const App = () => {
   const [parentName, setParentName] = useState("");
@@ -39,6 +40,7 @@ const App = () => {
           parentName={parentName}
           nftNumber={nftNumber}
         />
+        <BTLoadout itemsFound={itemsFound}/>
       </Container>
     );
   } else {

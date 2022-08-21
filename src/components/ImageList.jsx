@@ -7,19 +7,19 @@ function ImageList(props) {
 
   return (
     <Container>
-      <Row id="myItems" xs={2} md={3} lg={4} xl={5} xxl={6}>
+      <Row id="my-image-items" xs={2} md={4} lg={5} xl={5} xxl={6}>
         {itemsFound.map((item, i) => (
           <Row key={i}>
-            <Card className="ImageList" key={item.urlNumber}>
+            <Card className="" key={item.urlNumber}>
               <ImageItem
                 parentName={parentName}
-                nftType={item.nftType}
+                itemType={item.itemType}
                 itemRarity={item.itemRarity}
                 nftNumber={item.nftNumber}
                 imageUrl={item.imageUrl}
                 setModalShow={setModalShow}
                 setModalData={setModalData}
-                itemScore={getItemValue(item.nftType, item.itemRarity)}
+                itemScore={getItemValue(item.itemType, item.itemRarity)}
               />
             </Card>
           </Row>

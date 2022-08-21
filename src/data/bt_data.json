@@ -4,7 +4,7 @@
     "chest": ["hoodie_comfy", "hoodie_cat_ears", "kevlar_vest"],
     "back": ["daypack"],
     "feet": ["hightops", "socks", "combat_boots"],
-    "hands": ["foamo_sword", "machine_gun", "sock_doorknobs", "flamethrower"]
+    "hands": ["foamo_sword", "sock_doorknobs", "flamethrower"]
   },
   "item_multiplier": {
     "common": 1,

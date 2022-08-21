@@ -3,7 +3,7 @@ import { Container, Card } from "react-bootstrap";
 function ImageItem(props) {
   const {
     parentName,
-    nftType,
+    itemType,
     itemRarity,
     nftNumber,
     imageUrl,
@@ -23,7 +23,7 @@ function ImageItem(props) {
     setModalShow(true);
     setModalData({
       parentName: parentName,
-      nftType: nftType,
+      itemType: itemType,
       itemRarity: itemRarity,
       nftNumber: nftNumber,
       imageUrl: imageUrl,
@@ -36,7 +36,7 @@ function ImageItem(props) {
         <div className="img-wrapper">
           <Card.Img
             src={imageUrl}
-            className="imgList hover-zoom"
+            className="hover-zoom"
             alt={nftNumber}
           />
         </div>

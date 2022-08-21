@@ -42,7 +42,7 @@ h1 {
   padding: 0px;
 }
 
-#myItems {
+#my-image-items {
   justify-content: center;
   margin: 1rem;
 }
@@ -73,4 +73,8 @@ img.hover-zoom {
 img.hover-zoom:hover {
   cursor: zoom-in;
   transform: scale(1.25);
+}
+
+button.fs-7 {
+  font-size: 0.8rem;
 }

@@ -30,7 +30,7 @@ const Controls = (props) => {
     var itemList = [];
     const baseUrl = "https://media.10ktf.com/nfts/";
     const currentUrls = ImageUrls[parentName];
-    const rarity_data = Data[parentName];
+    const rarityData = Data[parentName];
 
     const fixParents = ["BAYC", "Nouns"]
 
@@ -45,8 +45,8 @@ const Controls = (props) => {
       var currentItem = baseUrl + imgNumberStr + ".jpg";
 
       // Get rarity data if available
-      if (rarity_data) {
-        const searchObject = rarity_data.find(
+      if (rarityData) {
+        const searchObject = rarityData.find(
           (obj) => obj["item"] == element["type"]
         );
         if (searchObject) {
@@ -68,7 +68,7 @@ const Controls = (props) => {
       // push item object into array
       itemList.push({
         parentName: parentName,
-        nftType: element["type"],
+        itemType: element["type"],
         itemRarity: itemRarity,
         nftNumber: submittedNumber,
         urlNumber: currentNumber.toString(),

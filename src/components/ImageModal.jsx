@@ -20,7 +20,7 @@ function ImageModal(props) {
         {modalData.imageUrl ? (
           <img src={modalData.imageUrl} width="100%" />
         ) : (
-          <h4>{modalData["nftType"]}</h4>
+          <h4>{modalData["itemType"]}</h4>
         )}
       </Modal.Body>
       <Modal.Footer>
