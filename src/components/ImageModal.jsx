@@ -1,12 +1,20 @@
 import { Button, Modal } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 
-function ImageModal(props) {
-  const { show, onHide, modalData, parentName, nftNumber } = props;
+function ImageModal() {
+  const dispatch = useDispatch();
+  const items = useSelector((state) => state.items);
+  const parentName = items.parentName;
+  const nftNumber = items.nftNumber;
+
+  const modal = useSelector((state) => state.modal);
+  const modalData = modal.modalData;
+  const showModal = modal.showModal;
 
   return (
     <Modal
-      show={show}
-      onHide={onHide}
+      show={showModal}
+      onHide={() => dispatch({ type: "modal/closeModal", payload: false })}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
@@ -24,7 +32,13 @@ function ImageModal(props) {
         )}
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={onHide}>Close</Button>
+        <Button
+          onClick={() =>
+            dispatch({ type: "modal/closeModal", payload: false })
+          }
+        >
+          Close
+        </Button>
       </Modal.Footer>
     </Modal>
   );

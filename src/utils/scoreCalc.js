@@ -11,7 +11,7 @@ function bestScore(itemArray) {
   const item_slots = data.item_slots;
   let bestLoadout = [];
 
-  for (var slot in item_slots) {
+  for (let slot in item_slots) {
     for (let item in item_slots[slot]) {
       let currItem = item_slots[slot][item];
 

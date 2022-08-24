@@ -1,16 +1,13 @@
 import { Container, Card } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 
 function ImageItem(props) {
-  const {
-    parentName,
-    itemType,
-    itemRarity,
-    nftNumber,
-    imageUrl,
-    setModalShow,
-    setModalData,
-    itemScore,
-  } = props;
+  const { itemType, itemRarity, imageUrl, itemScore } = props;
+
+  const dispatch = useDispatch();
+  const items = useSelector((state) => state.items);
+  const parentName = items.parentName;
+  const nftNumber = items.nftNumber;
 
   if (itemRarity != "") {
     var classColor = "item-" + itemRarity;
@@ -20,25 +17,22 @@ function ImageItem(props) {
 
   const handleClick = (e) => {
     e.preventDefault();
-    setModalShow(true);
-    setModalData({
+    let modalData = {
       parentName: parentName,
       itemType: itemType,
       itemRarity: itemRarity,
       nftNumber: nftNumber,
       imageUrl: imageUrl,
-    });
+    };
+    dispatch({ type: "modal/setModalData", payload: modalData });
+    dispatch({ type: "modal/setShowModal", payload: true });
   };
 
   return (
     <Container className={classColor}>
       <Card key={nftNumber} onClick={handleClick}>
         <div className="img-wrapper">
-          <Card.Img
-            src={imageUrl}
-            className="hover-zoom"
-            alt={nftNumber}
-          />
+          <Card.Img src={imageUrl} className="hover-zoom" alt={nftNumber} />
         </div>
         <Card.Title>{itemRarity}</Card.Title>
       </Card>

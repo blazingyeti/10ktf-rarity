@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 import { bestScore } from "../utils/scoreCalc";
 import LoadoutSlot from "./LoadoutSlot";
 
-function BTLoadout(props) {
-  const { itemsFound } = props;
+function BTLoadout() {
   const [bestItems, setBestItems] = useState();
+  const items = useSelector((state) => state.items);
+  const itemsFound = items.itemsFound;
 
   useEffect(() => {
     setBestItems(bestScore(itemsFound));

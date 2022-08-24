@@ -8,36 +8,39 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 
 import ImageUrls from "../data/image_urls.json";
 import Data from "../data/processed_data.json";
 
-const Controls = (props) => {
-  const { setNftNumber, parentName, setParentName, setItemsFound } = props;
+const Controls = () => {
+  const dispatch = useDispatch();
+  const items = useSelector((state) => state.items);
+  const parentName = items.parentName;
 
   const parents = Object.keys(ImageUrls);
 
   const handleSelect = (e) => {
-    setParentName(e);
+    dispatch({ type: "items/setParentName", payload: e });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const submittedNumber = e.target["nftNumber"].value;
-    setNftNumber(submittedNumber);
+    dispatch({ type: "items/setNftNumber", payload: submittedNumber });
 
-    // Build out the ItemList from ImageUrls
-    var itemList = [];
+    // Build out the ImageUrls
     const baseUrl = "https://media.10ktf.com/nfts/";
     const currentUrls = ImageUrls[parentName];
     const rarityData = Data[parentName];
 
-    const fixParents = ["BAYC", "Nouns"]
+    const fixParents = ["BAYC", "Nouns"];
 
     currentUrls.forEach((element) => {
       var currentNumber = parseInt(submittedNumber) + element["number"];
       var imgNumberStr = element["url_prefix"] + currentNumber.toString();
 
+      // Need to pad the url string with 0s for some parents
       if (fixParents.includes(parentName) && imgNumberStr.length < 20) {
         imgNumberStr = imgNumberStr.padStart(20, "0");
       }
@@ -66,17 +69,16 @@ const Controls = (props) => {
       }
 
       // push item object into array
-      itemList.push({
+      let itemFound = {
         parentName: parentName,
         itemType: element["type"],
         itemRarity: itemRarity,
         nftNumber: submittedNumber,
         urlNumber: currentNumber.toString(),
         imageUrl: currentItem,
-      });
+      };
+      dispatch({ type: "items/addItemFound", payload: itemFound });
     });
-
-    setItemsFound(itemList);
   };
 
   return (
@@ -103,14 +105,14 @@ const Controls = (props) => {
         </Col>
         <Col>
           <Form onSubmit={handleSubmit}>
-            <Row>
+            <Row className="justify-content-center">
               <Form.Control
                 name="nftNumber"
                 type="text"
                 placeholder="Enter NFT Number"
               />
             </Row>
-            <Row>
+            <Row className="justify-content-center">
               <Button variant="primary" type="submit">
                 Check
               </Button>
