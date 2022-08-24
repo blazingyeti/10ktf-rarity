@@ -19,9 +19,13 @@ export const itemSlice = createSlice({
     addItemFound: (state, { payload }) => {
       state.itemsFound = [...state.itemsFound, payload];
     },
+    clearItemsFound: (state) => {
+      state.itemsFound = [];
+    },
   },
 });
 
-export const { setParentName, setNftNumber, addItemFound } = itemSlice.actions;
+export const { setParentName, setNftNumber, addItemFound, clearItemsFound } =
+  itemSlice.actions;
 
 export default itemSlice.reducer;

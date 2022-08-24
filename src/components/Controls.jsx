@@ -29,6 +29,8 @@ const Controls = () => {
     const submittedNumber = e.target["nftNumber"].value;
     dispatch({ type: "items/setNftNumber", payload: submittedNumber });
 
+    dispatch({ type: "items/clearItemsFound" });
+
     // Build out the ImageUrls
     const baseUrl = "https://media.10ktf.com/nfts/";
     const currentUrls = ImageUrls[parentName];
