@@ -20,6 +20,5 @@
 .env.production.local
 npm-debug.log*
 .vscode
-package-lock.json
 _old
 process_data
